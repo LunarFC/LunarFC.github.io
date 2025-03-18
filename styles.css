@@ -1,0 +1,274 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1fdf9;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Headings */
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: #22577a;
+    padding: 20px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li.active a {
+    background-color: #38a3a5;
+    padding: 10px 15px;
+}
+
+/* Home Section */
+.home-section {
+    background-color: #38a3a5;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 50px;
+}
+
+.home-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+/* Global Styles for Spacing */
+main {
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+/* Content Layout */
+.about-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #22577a;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+footer {
+    background-color: #22577a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Contact Form Styling */
+.contact-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #22577a;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Form styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #38a3a5;
+    background-color: #fff;
+    outline: none;
+}
+
+.submit-group {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.submit-btn {
+    background-color: #38a3a5;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #22577a;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 20px 15px;
+    }
+}
+
+/* Transitions */
+
+@keyframes TransitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.container {
+    animation:TransitionIn 1s ;
+}
+
+.services-container {
+    background-color: #38a3a5; /* Match the home section background */
+    color: #fff; /* White text color for contrast */
+    padding: 60px 20px; /* Similar padding as home section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 50px; /* Margin to separate from other elements */
+    text-align: left; /* Align text to the left */
+}
+
+.services-section h2 {
+    font-size: 3em; /* Large heading size */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.services-section p {
+    font-size: 1.3em; /* Larger paragraph text */
+    margin-bottom: 30px; /* Space below paragraph */
+    line-height: 1.8; /* Line height for readability */
+}
+
+.service-item {
+    margin-bottom: 2rem; /* Space between service items */
+}
+
+.service-item h3 {
+    color: #fff; /* White text color for headings */
+    margin-bottom: 1rem; /* Space below headings */
+}
+
+.service-item p {
+    margin-bottom: 1rem; /* Space below paragraphs */
+}
+
+.service-item ul {
+    list-style-type: disc; /* Bullet points */
+    margin-left: 1.5rem; /* Reduced indentation for list */
+    color: #fff; /* White text color for list items */
+    padding-left: 0; /* Remove default padding */
+}
+
+.service-item ul li {
+    margin: 0.5rem 0; /* Space between list items */
+}

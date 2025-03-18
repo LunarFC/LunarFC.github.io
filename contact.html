@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Harmony English Classes</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&family=Poppins:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Harmony English Classes</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            
+            <p>If you have any questions or want to schedule a session, feel free to fill out the form below. We look forward to hearing from you!</p>
+
+            <form action="/submit_form" method="post" class="contact-form">
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email Address">
+                </div>
+
+                <div class="input-group">
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" required placeholder="Your Mobile Number">
+                </div>
+
+                <div class="input-group">
+                    <label for="meeting-date">Preferred Meeting Date:</label>
+                    <input type="date" id="meeting-date" name="meeting_date" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="meeting-time">Preferred Meeting Time:</label>
+                    <input type="time" id="meeting-time" name="meeting_time" required>
+                </div>
+
+                <div class="submit-group">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Harmony English Classes | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
